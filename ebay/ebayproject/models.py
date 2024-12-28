@@ -11,10 +11,10 @@ class Category(models.Model):
 
 
 class Customer(models.Model):
-    username = models.CharField(max_length=100, verbose_name="იუზერნეიმი")
-    first_name = models.CharField(max_length=100, verbose_name="სახელი", default="")
-    email = models.EmailField("ელ.ფოსტის მისამართი", unique=False)
-    is_active = models.BooleanField("აქტიურია", default=False)
+    username = models.CharField(max_length=100, verbose_name="username")
+    first_name = models.CharField(max_length=100, verbose_name="name", default="")
+    email = models.EmailField("email", unique=False)
+    is_active = models.BooleanField("active", default=False)
 
 
 class Product(models.Model):
